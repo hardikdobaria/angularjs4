@@ -1,0 +1,56 @@
+<h1>Angular 4 CRUD Operation</h1>
+<h3 *ngIf="bikeIdToUpdate else create"> 
+   Update Bike for Id: {{bikeIdToUpdate}}
+</h3>
+<ng-template #create>
+   <h3> Create New Bike </h3>
+</ng-template>
+<div>
+ <form [formGroup]="bikeForm" (ngSubmit)="onBikeFormSubmit()">
+  <table>
+    <tr><td>Enter Model</td><td><input formControlName="model">
+	       <label *ngIf="bikeForm.get('model').invalid && processValidation" [ngClass] = "'error'"> Model is required. </label>
+    </td></tr>
+    <tr><td>Enter Manufacturer</td><td><input formControlName="manufacturer">
+	       <label *ngIf="bikeForm.get('manufacturer').invalid && processValidation" [ngClass] = "'error'"> Manufacturer is required. </label>
+    </td></tr>	
+    <tr><td colspan="2">
+	    <button *ngIf="!bikeIdToUpdate">CREATE</button>  
+	    <button *ngIf="bikeIdToUpdate">UPDATE</button>  
+	    <button (click)="backToCreateBike()" *ngIf="bikeIdToUpdate">Go Back</button>  
+    </td></tr>
+  </table>
+ </form> 
+ <br/>
+ 
+ <div *ngIf="statusCode; else processing">
+   <div *ngIf="statusCode === 201" [ngClass] = "'success'">
+	 Bike added successfully.
+   </div>   
+   <div *ngIf="statusCode === 409" [ngClass] = "'success'">
+        Bike already exists.
+   </div>   	
+   <div *ngIf="statusCode === 200" [ngClass] = "'success'">
+        Bike updated successfully.
+   </div>   	      
+   <div *ngIf="statusCode === 204" [ngClass] = "'success'">
+        Bike deleted successfully.
+   </div>   	   
+   <div *ngIf="statusCode === 500" [ngClass] = "'error'">
+        Internal Server Error.
+   </div>   	
+ </div>
+<!--  <ng-template #processing>
+	<img *ngIf="requestProcessing" src="assets/images/loading.gif">
+ </ng-template> -->
+</div>
+<h3>Bike Details</h3>
+<table>
+  <tr><th> Id</th> <th>Model</th><th>Manufacturer</th><th></th><th></th></tr>
+  <tr *ngFor="let bike of allBikes" >
+        <td>{{bike.id}}</td> <td>{{bike.model}}</td> <td>{{bike.manufacturer}}</td>
+	<td><button type="button" (click)="loadBikeToEdit(bike.id)">Edit</button> </td> 
+	<td><button type="button" (click)="deleteBike(bike.id)">Delete</button></td>
+  </tr>
+</table> 
+
