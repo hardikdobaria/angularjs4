@@ -13,18 +13,19 @@ Before we can begin, you need to ensure you have a few dependencies installed.
 - [Spring Tool Suite]
 
 ### Step 1. Set up the Development Environment
-
-	- You need to set up your development environment before you can do anything.
+	
+  - You need to set up your development environment before you can do anything.
 
 	- Install Node.js and npm if they are not already on your machine.
 
-	- Verify that you are running at least node 6.9.x and npm 3.x.x by running node -v and npm -v in a terminal/console window. Older versions produce errors, but newer versions are fine.
+	- Verify that you are running at least node 6.9.x and npm 3.x.x by running node -v and npm -v in a 
+    terminal/console window. Older versions produce errors, but newer versions are fine.
 	
-	- Then install the Angular CLI globally.
+	- Install the Angular CLI globally:
 	
-	```sh
+  ```sh
 		 npm install -g @angular/cli
-	```
+  ```
 	
 ### How to run 
 
@@ -36,6 +37,3 @@ Before we can begin, you need to ensure you have a few dependencies installed.
   
   - Open terminal in STS and Run `ng server --proxy-config proxy.conf.json` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
   
-  
-  
-
