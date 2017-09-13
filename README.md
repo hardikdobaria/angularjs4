@@ -1,9 +1,10 @@
 # Simple crud operation example using Angularjs 4
 
-This project was generated with @angular/cli: 1.3.2
-node: v7.10.0
-npm 4.6.1
-os: win32 x64
+This project was generated with below configration.
+- @angular/cli: 1.3.2
+- node: v7.10.0
+- npm 4.6.1
+- os: win32 x64
 
 ### Prerequisites
 Before we can begin, you need to ensure you have a few dependencies installed.
