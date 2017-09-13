@@ -1,4 +1,4 @@
-###Simple crud operation example using Angularjs 4
+# Simple crud operation example using Angularjs 4
 
 This project was generated with @angular/cli: 1.3.2
 node: v7.10.0
@@ -12,7 +12,7 @@ Before we can begin, you need to ensure you have a few dependencies installed.
 - [Angular-CLI]
 - [Spring Tool Suite]
 
-###Step 1. Set up the Development Environment
+### Step 1. Set up the Development Environment
 
 	- You need to set up your development environment before you can do anything.
 
@@ -23,7 +23,7 @@ Before we can begin, you need to ensure you have a few dependencies installed.
 	- Then install the Angular CLI globally.
 	
 	```sh
-		**npm install -g @angular/cli**
+		 npm install -g @angular/cli
 	```
 	
 ### How to run 
