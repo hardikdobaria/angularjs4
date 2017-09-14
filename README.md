@@ -40,7 +40,7 @@ Before we can begin, you need to ensure you have a few dependencies installed.
   
   ### Note
 - This application is Client side application developed using angularjs4.
-- Client side applicatin is developed using Spring Boot,jpa,restapi Please Download/clone the project using below link.
+- Server side applicatin is developed using Spring Boot,jpa,restapi Please Download/clone the project using below link.
 * [spring-jpa-rest-angular4]
 
 [spring-jpa-rest-angular4]: https://github.com/hardikdobaria/spring-jpa-rest-angular4
