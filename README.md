@@ -38,3 +38,10 @@ Before we can begin, you need to ensure you have a few dependencies installed.
   
   - Open terminal in STS and Run `ng server --proxy-config proxy.conf.json` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
   
+  ### Note
+- This application is Client side application developed using angularjs4.
+- Client side applicatin is developed using Spring Boot,jpa,restapi Please Download/clone the project using below link.
+* [spring-jpa-rest-angular4]
+
+[spring-jpa-rest-angular4]: https://github.com/hardikdobaria/spring-jpa-rest-angular4
+  
